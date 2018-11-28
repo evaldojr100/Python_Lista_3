@@ -1,0 +1,15 @@
+'''12) (BACKES, 2012) Escreva um programa que leia um número inteiro e calcule a soma de
+todos os divisores desse número, com exceção dele próprio. Ex: a soma dos divisores do
+número 66 é 1 + 2 + 3 + 6 + 11 + 22 + 33 = 78. Salve o programa com o nome
+“​ 12_soma_dos_divisores.py ​ ”'''
+
+soma=0
+i=1
+num=int(input("Digite um numero:"))
+
+while i!=num-1:
+    if num%i==0:
+        soma+=i
+    i+=1
+
+print("Soma dos valores:",soma)
